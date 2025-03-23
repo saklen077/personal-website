@@ -1,0 +1,400 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.css">
+    <title>Portfolio Website</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- bootstrap CDN -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.min.js"></script>
+    <!-- font awesome -->
+    <script src="https://kit.fontawesome.com/31149d48b0.js" crossorigin="anonymous"></script>
+    <script src="https://kit.fontawesome.com/3ef725397f.js" crossorigin="anonymous"></script>
+    <!-- linking css file -->
+    <link rel="stylesheet" href="style.css">
+    <style>
+        .grid-container {
+            display: grid;
+            grid-template-columns: auto auto auto;
+            padding: 10px;
+        }
+
+        .grid-item {
+            padding: 20px;
+            font-size: 30px;
+            text-align: center;
+        }
+        .card-text{
+            width:fit-content;
+        }
+    </style>
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-lg fixed-top navbarScroll navbar-dark">
+        <div class="container">
+            <a class="navbar-brand" href="#">Saklen.dev</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item active">
+                        <a class="nav-link" href="#home">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#about">About</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#project">Project</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#skill">Skill</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#certification">Certification</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#contact">Contact</a>
+                    </li>
+                </ul>
+                <img src="/images/moon.png" id="moon">
+            </div>
+        </div>
+    </nav>
+
+    <section class="container-fluid section bgimage" id="home">
+        <div class="row">
+            <div class="col-lg-12 col-md-10 col-sm-12 col-xs-12 hero_text">
+                <h2 class="hero_title">Welcome To My Portfolio</h2><br><br>
+                <h1 href="" class="hero_title typewrite" data-period="2000"
+                    data-type='[ "Hi, Im Saklen.", "I am Web Developer.", "I am Team Player.", "I Love Problem Solving." ,"I am Learner"]'>
+                    <span class="wrap"></span>
+                </h1><br>
+                <div class="text-center">  <button type="button" class="btn btn-success mt-3"><a href="/pdf/Saklen-Resume.pdf" download="resume"class="btn btn-success">Download CV</a></button>
+
+            </div>
+
+        </div>
+        </div>
+    </section>
+
+    <!-- about section -->
+    <section class="container mt-4 pt-7 section" id="about">
+        <h1 class="text-center">About Me</h1>
+
+        <div class="row mt-4 about">
+            <div class="col">
+                <p class="size">
+                    Hello! I'm Saklen, a passionate and creative web developer. Welcome to my online portfolio,
+                    where I bring my digital playground to life and showcase the art of web development.
+                    I had Done 100+ Coding Quetions on diffrent Platform.
+
+                </p>
+
+                <div class="row mt-3">
+                    <p> I had Completed My Python Course with Intership and Gain Hand on experience in project.
+                        Successfully completed a Python programming with strong emphasis on foundational concepts,
+                        algorithmic problem-solving, and hands-on coding projects.
+
+                        My Hobbies are Reading Book, Watching Movies , Playing PUBG etc.
+
+                    </p>
+                </div>
+                <div class="text-center p-4">
+                    <!-- Facebook -->
+                    <a class="btn btn-primary" style="background-color: #3b5998;" href="https://www.facebook.com/saklen.mujawar.94"
+                        target="_blank" role="button"><i
+                            class="fab fa-facebook-f"></i></a>
+
+                    <!-- Github -->
+                    <a class="btn btn-primary" style="background-color: #333333;" href="https://github.com/saklen077"
+                        target="_blank" role="button"><i class="fab fa-github"></i></a>
+
+                    <!-- Instagram -->
+                    <a class="btn btn-primary" style="background-color: #ac2bac;" href="https://www.instagram.com/saklen.07/" target="_blank"
+                        role="button"><i class="fab fa-instagram"></i></a>
+
+                    <!-- Linkedin -->
+                    <a class="btn btn-primary" style="background-color: #0082ca;" href="https://www.linkedin.com/in/saklen-mujawar/" target="_blank"
+                        role="button"><i class="fab fa-linkedin-in"></i></a>
+                
+                </div>
+                
+            </div>
+
+        </div>
+    </section>
+
+
+    <!-- portfolio section-->
+    <section class="section" id="project">
+        <div class="container mt-3" style="justify-content: center;">
+            <h1 class="text-center">My Project</h1>
+            <div class="row">
+                <div class="col-lg-4 mt-4">
+                    <div class="card">
+                        <img class="card-img-top" src="images/Project-1.png" alt="Card image" style="width:100%">
+                        <div class="card-body">
+                            <h4 class="card-title" Id="change-text">Game Store Website</h4>
+                            <p class="card-text" id="change-text1">a MERN  application, 
+                                with authentication to store users data in MongoDB and implemented a responsive UI with React & Tailwind CSS
+                                .
+                                 </p>
+                            <div class="text-center">
+                                <a href="https://github.com/saklen077/GamesStore" class="btn btn-success">Link</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 mt-4">
+                    <div class="card">
+                        <img class="card-img-top" src="images/project-2.png" alt="Card image" style="width:100%">
+                        <div class="card-body">
+                            <h4 class="card-title" id="change-text2">Movie App</h4>
+                            <p class="card-text" id="change-text3">A Movie App Which Shows All types of Movies and Web series based on User Queries 
+                                USing TMDb Api  to fetch comprehensive movie details.
+                            </p>
+                            <div class="text-center">
+                                <a href="https://movies-x4y2.onrender.com/" class="btn btn-success">Link</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 mt-4">
+                    <div class="card">
+                        <img class="card-img-top" src="images/Project-3.png" alt="Card image" style="width:100%">
+                        <div class="card-body">
+                            <h4 class="card-title" id="change-text4">RecipeHunt Website</h4>
+                            <p class="card-text" id="change-text5">A dynamic food recipe website using React, Implemented search functionality 
+                                to fetch recipes and provided external recipe links.</p>
+                            <div class="text-center">
+                                <a href="https://recipe-hunt1.netlify.app/" class="btn btn-success">Link</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <br>
+            <div class="row">
+                <div class="col-lg-4 mt-4">
+                    <div class="card">
+                        <img class="card-img-top" src="images/Project-4.png" alt="Card image" style="width:100%">
+                        <div class="card-body">
+                            <h4 class="card-title"Id="change-text6">CropRecomendation</h4>
+                            <p class="card-text"Id="change-text7">A Crop Recomendation is to allow users to input environmental data (temperature, 
+                                humidity, soil type) and receive tailored crop recommend in real-time.
+                                 </p>
+                            <div class="text-center">
+                                <a href="https://github.com/saklen077/Crop-Recommendation" class="btn btn-success">Link</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 mt-4">
+                    <div class="card">
+                        <img class="card-img-top" src="images/project-5.jpg" alt="Card image" style="width:100%">
+                        <div class="card-body">
+                            <h4 class="card-title"Id="change-text8">Employee Managment System</h4>
+                            <p class="card-text"Id="change-text9">Developed a comprehensive EMS Using
+                             Tkinter library for the GUI, and MongoDB as the database backend.
+                            </p>
+                            <div class="text-center">
+                                <a href="https://github.com/saklen077/Employee-Management-System"
+                                    class="btn btn-success">Link</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-4 mt-4">
+                    <div class="card">
+                        <img class="card-img-top" src="images/project-6.png" alt="Card image" style="width:100%">
+                        <div class="card-body">
+                            <h4 class="card-title"Id="change-text10">Personal Portfolio</h4>
+                            <p class="card-text"Id="change-text11">I have designed and developed a personal portfolio
+                                website for  showcasing my skills and projects in
+                                an engaging and responsive manner.
+                            </p>
+                            <div class="text-center">
+                                <a href="#" class="btn btn-success">Link</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <br>
+            <div class="row justify-content-md-center">
+                
+            </div>
+    </section>
+    <section class="container mt-4 section" id="skill">
+        <div class="container" id="skill">
+            <h1 class="text-center">Skills</h1>
+            <div class="grid-container">
+                <div class="grid-item"><img src="images/icons8-html-48.png" style="height: 100%;"></div>
+                <div class="grid-item"><img src="images/icons8-css-48.png" style="height: 100%;"></i></div>
+                <div class="grid-item"><img src="images/icons8-js-48.png" style="height: 100%;"></i></div>
+                <div class="grid-item"><img src="images/react.png" style="height: 50%;"></div>
+                <div class="grid-item"><img src="images/icons8-nodejs-48.png" style="height: 70%;"></div>
+                <div class="grid-item"><img src="images/icons8-python-48.png" style="height: 70%;"></i></div>
+                <div class="grid-item"><img src="images/mongodb.png" style="height:60%;"></div>
+                <div class="grid-item"><img src="images/postgresql.png" style="height: 60%;"></div>
+                <div class="grid-item"><img src="images/download1.jpg" style="height: 50%;"></div>
+            </div>
+
+        </div>
+        </div>
+        </div>
+
+    </section>
+    <!-- portfolio section-->
+    <section class="section" id="certification">
+        <div class="container mt-3">
+            <h1 class="text-center">Certification</h1>
+            <div class="row">
+                <div class="col-lg-4 mt-4">
+                    <div class="card">
+                        <img class="card-img-top" src="images/certifi1.png" alt="certificate1 image" style="width:100%">
+                        <div class="card-body" id="#card-body">
+                            <div class="text-center">
+                                <a href="/pdf/kamal-python-certificate.pdf" download="Python-Certificate"class="btn btn-success">Download</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-4 mt-4">
+                    <div class="card">
+                        <img class="card-img-top" src="images/certificate2.png" alt="Certificate2 image"
+                            style="width:100%">
+                        <div class="card-body">
+                            <div class="text-center">
+                                <a href="/pdf/mern-certificate.pdf" download="React-certificate"class="btn btn-success">Download</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-4 mt-4">
+                    <div class="card">
+                        <img class="card-img-top" src="images/certificate3.png" alt="Certificate3 image"
+                            style="width:100%">
+                        <div class="card-body">
+                            <div class="text-center">
+                                <a href="/pdf/Html-css-certificate.pdf" download="HTML-CSS-certificate"class="btn btn-success">Download</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <br>
+            <div class="row">
+                <div class="col-lg-4 mt-4">
+                    <div class="card">
+                        <img class="card-img-top" src="images/certificate4.png" alt="certificate1 image" style="width:100%">
+                        <div class="card-body">
+                            <div class="text-center">
+                                <a href="/pdf/aws-cloudsem1.pdf" download="AWS-cloudsem1"class="btn btn-success">Download</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-4 mt-4">
+                    <div class="card">
+                        <img class="card-img-top" src="images/certificate5.png" alt="Certificate2 image"
+                            style="width:100%">
+                        <div class="card-body">
+                            <div class="text-center">
+                                <a href="/images/certificate5.png" download="Web-development-Certificate"class="btn btn-success">Download</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-4 mt-4">
+                    <div class="card">
+                        <img class="card-img-top" src="images/certificate6.png" alt="Certificate3 image"
+                            style="width:100%">
+                        <div class="card-body">
+                            <div class="text-center">
+                                <a href="/pdf/certificate of participation..pdf" download="Certification-of-Participation" class="btn btn-success">Download</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <br>
+
+
+        </div>
+    </section>
+
+
+    <!-- contact section-->
+    <!-- https://getbootstrap.com/docs/5.2/forms/overview -->
+    <section class="container mt-3 section" id="contact">
+        <h1 class="text-center">Contact Me</h1>
+
+        <div class="row mt-4">
+            <div class="col-lg-6">
+                <!-- to edit google map go to https://www.embed-map.com type your location, generate html code and copy the html  -->
+                <div style="max-width:100%;overflow:hidden;color:red;width:500px;height:500px;">
+                    <div id="embedmap-canvas" style="height:100%; width:100%;max-width:100%;">
+                        <div style="text-decoration:none; overflow:hidden;max-width:100%;width:500px;height:500px;"><div id="embed-map-display" style="height:100%; width:100%;max-width:100%;"><iframe style="height:100%;width:100%;border:0;" frameborder="0" src="https://www.google.com/maps/embed/v1/place?q=ansari+chowk,kalyan&key=AIzaSyBFw0Qbyq9zTFTd-tUY6dZWTgaQzuU17R8"></iframe></div><a class="google-maps-html" rel="nofollow" href="https://www.bootstrapskins.com/themes" id="enable-map-data">premium bootstrap themes</a><style>#embed-map-display img.text-marker{max-width:none!important;background:none!important;}img{max-width:none}</style></div>
+                    </div>
+                    <a class="googlemaps-html" href="https://www.embed-map.com"
+                        id="get-data-forembedmap">https://www.embed-map.com</a>
+                    <style>
+                        #embedmap-canvas img {
+                            max-width: none !important;
+                            background: none !important;
+                            font-size: inherit;
+                            font-weight: inherit;
+                        }
+                    </style>
+                </div>
+            </div>
+
+            <div class="col-lg-6 contact-details">
+                <!-- form fields -->
+                <form action="https://formspree.io/f/mjvqwjpy" method="POST">
+                    <input type="text" name="name" class="form-control form-control-lg" placeholder="Name">
+                    <input type="email" name="email" class="form-control mt-3" placeholder="Email">
+                    <div class="mb-3 mt-4">
+                        <textarea class="form-control" rows="5" id="comment" name="text"
+                            placeholder="Your message"></textarea>
+                    </div>
+                    <div class="text-center"> <button type="submit" class="btn btn-success mt-3">Contact Me</button>
+                    </div>
+                </form>
+
+
+            </div>
+        </div>
+
+    </section>
+
+    <!-- footer section-->
+    <footer class="text-center text-dark">
+
+        <!-- Copyright -->
+        <div class="text-center p-3" style="background: rgb(52, 1, 86);" id="loggo">
+            Copyright © 2025 | All Right Reserved | Designed by Saklen Mujawar
+
+        </div>
+        <!-- Copyright -->
+    </footer>
+
+
+    <!-- load javascript after loading all html content -->
+    <script src="script/script.js"></script>
+
+</body>
+
+</html>
